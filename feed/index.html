@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feed | CSS Frameworks CA</title>
+  <link rel="stylesheet" href="../src/main.css" />
+</head>
+<body>
+  <main class="container py-5">
+    <h1 class="text-center mb-4">Social Feed</h1>
+
+    <!-- Search and Sort -->
+    <div class="row mb-4">
+      <div class="col-md-8 mb-2">
+        <input type="search" class="form-control" placeholder="Search posts..." />
+      </div>
+      <div class="col-md-4">
+        <select class="form-select">
+          <option selected>Sort by</option>
+          <option value="newest">Newest</option>
+          <option value="popular">Most Popular</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Post Creation Form -->
+    <form class="mb-5">
+      <div class="mb-3">
+        <label for="postTitle" class="form-label">Create a Post</label>
+        <input type="text" class="form-control" id="postTitle" placeholder="Post title" required />
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="3" placeholder="What's on your mind?" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Post</button>
+    </form>
+
+    <!-- Post Grid -->
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://placehold.co/600x400" class="card-img-top" alt="Post thumbnail" />
+          <div class="card-body">
+            <h5 class="card-title">Post Title</h5>
+            <p class="card-text">This is a brief post summary. Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://placehold.co/600x400" class="card-img-top" alt="Post thumbnail" />
+          <div class="card-body">
+            <h5 class="card-title">Another Post</h5>
+            <p class="card-text">This is another post. More content can go here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- You can duplicate more posts if you like -->
+    </div>
+  </main>
+</body>
+</html>

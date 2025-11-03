@@ -1,0 +1,19 @@
+{
+  "name": "ccsframeworksca-main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch src/scss/main.scss src/main.css",
+    "prod": "sass src/scss/main.scss src/main.css --style=compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.93.3"
+  }
+}

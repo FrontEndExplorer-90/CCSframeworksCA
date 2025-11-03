@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | CSS Frameworks CA</title>
+  <link rel="stylesheet" href="src/main.css" />
+</head>
+<body>
+  <main class="container py-5">
+    <h1 class="text-center mb-4">Welcome to CSS Framework CA</h1>
+    
+    <form class="mx-auto needs-validation" style="max-width: 400px;" action="/profile" novalidate>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="email" required />
+        <div class="invalid-feedback">Please enter a valid email.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input 
+          type="password" 
+          class="form-control" 
+          id="password" 
+          required 
+          minlength="8" 
+        />
+        <div class="invalid-feedback">Password must be at least 8 characters.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Log In</button>
+    </form>
+  </main>
+
+  <script>
+    // Enable Bootstrap form validation
+    (function () {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+</body>
+</html>

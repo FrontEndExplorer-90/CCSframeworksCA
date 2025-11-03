@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile | CSS Frameworks CA</title>
+  <link rel="stylesheet" href="../src/main.css" />
+</head>
+<body>
+  <main class="container py-5">
+    <div class="text-center mb-4">
+      <img src="https://placehold.co/100x100" class="rounded-circle mb-2" alt="Profile image" />
+      <h2 class="fw-bold">Username</h2>
+      <button class="btn btn-outline-primary btn-sm">Follow</button>
+    </div>
+
+    <!-- Followers/Following -->
+    <div class="d-flex justify-content-center gap-4 mb-5">
+      <div>
+        <h6 class="mb-0">Followers</h6>
+        <p class="mb-0">123</p>
+      </div>
+      <div>
+        <h6 class="mb-0">Following</h6>
+        <p class="mb-0">456</p>
+      </div>
+    </div>
+
+    <!-- User Posts -->
+    <h4 class="mb-3">Posts by User</h4>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://placehold.co/600x400" class="card-img-top" alt="Post image" />
+          <div class="card-body">
+            <h5 class="card-title">User's Post Title</h5>
+            <p class="card-text">This is a post by the user. Add more if you like.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Duplicate more posts here -->
+    </div>
+  </main>
+</body>
+</html>
